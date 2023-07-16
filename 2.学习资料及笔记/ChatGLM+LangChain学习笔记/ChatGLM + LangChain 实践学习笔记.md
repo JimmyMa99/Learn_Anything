@@ -14,7 +14,8 @@
 
 ## 1.2基于本地知识库问答的实现原理
 
-![Untitled](ChatGLM%20+%20LangChain%EF%BC%9A%E5%9F%BA%E4%BA%8E%E6%9C%AC%E5%9C%B0%E7%9F%A5%E8%AF%86%E5%BA%93%E7%9A%84%20ChatGLM%20%E7%AD%89%E5%A4%A7%E8%AF%AD%E8%A8%80%E6%A8%A1%E5%9E%8B%E5%BA%94%E7%94%A8%E5%AE%9E%E7%8E%B0%20ec64909dabcb498ab063a747c424dea1/Untitled.png)
+![Untitled](https://github.com/JimmyMa99/Learn_Anything/assets/101508488/af9d8fa3-6d2b-4be4-8a4b-e51154ba4e92)
+
 
 A.对本地问答进行向量化
 
