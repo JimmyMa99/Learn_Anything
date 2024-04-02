@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML 表单</title>
+</head>
+<body>
+    <!-- action是提交的地址 -->
+    <form action="#">
+        <span>用户名：</span>
+        <input type="text" placeholder="出现，填写后消失">
+        <br>
+        <span>密码：</span>
+        <input type="text" value="自动填写">
+
+        <br>
+        <br>
+        <label>用户名：</label>
+        <!-- 用label是针对input的 -->
+        <input type="text" placeholder="出现，填写后消失">
+        <br>
+        <label>密码：</label>
+        <input type="text" value="自动填写">
+        <br>
+        <br>
+        <label for="">性别</label>
+        <input type="radio">选项1 不加name属性，可以多选
+        <input type="radio">选项2
+        <input type="radio">选项3
+        <br>
+        <label for="">性别</label>
+        <input type="radio" name="gender">选项1 加name属性，只能单选
+        <input type="radio" name="gender">选项2
+        <input type="radio" name="gender">选项3
+
+        <br>
+        <br>
+        <label for="username">使用for的username</label>
+        <input type="text" name="" id="username">
+        <label for="pwd">使用for的password</label>
+        <input type="password" name="" id="pwd" placeholder="请输入密码">
+        <br>
+        <br>
+        <label for="">多选 爱好</label>
+        <input type="checkbox" name="hobby">唱
+        <input type="checkbox" name="hobby">跳
+        <input type="checkbox" name="hobby">rap
+        <input type="checkbox" name="hobby">篮球
+        <br>
+        <br>
+        <input type="submit" name="" id="" value="上传（不写默认是提交）">
+    </form>
+</body>
+</html>
