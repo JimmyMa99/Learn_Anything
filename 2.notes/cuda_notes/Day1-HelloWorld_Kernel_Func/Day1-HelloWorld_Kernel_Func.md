@@ -62,7 +62,7 @@ Hello from GPU!
 
 # 理论部分
 
-![img](figure/cuda_day1/1.png)
+![img](../../../figure/cuda_day1/1.png)
 ## 线程模块结构
 ### 1.线程模型重要概念
 	- grid 网格
@@ -74,7 +74,7 @@ Hello from GPU!
 > 设计总的线程数至少等于（>=）核心数才能充分发挥GPU资源
 
 ## 一维线程模型
-![img](figure/cuda_day1/2.png)
+![img](../../../figure/cuda_day1/2.png)
 1. 每个线程在核函数中都有一个唯一的身份标识
 2. 每个线程的唯一标识由这两个<<<grid_size，block_size>>>确定;grid_size，block size保存在内建变量（build-invariable）目前考虑的是一维的情况：
 	1. gridDim.x.变是的数量的数值等于执行配置中变量grid_size的值；
@@ -85,7 +85,7 @@ Hello from GPU!
 	>可以简单理解为n行m列，但事实上是第n个grid的第m个block
 	>在block里区分不同的thread
 	
-	![img](figure/cuda_day1/3.png)
+	![img](../../../figure/cuda_day1/3.png)
 	>一维模型中的线程Idx计算公式为 $Idx=threadIdx.x+blockIdx.x+blockDim.x$
 
 测试代码
@@ -125,7 +125,7 @@ grid_size-->gridDim.x
 block_size-->blockDim.x
 gridDim和blockDim没有指定的维度默认为1
 
-![img](figure/cuda_day1/5.png)
+![img](../../../figure/cuda_day1/5.png)
 
 ## 如何定义多维网格
 ```cpp
