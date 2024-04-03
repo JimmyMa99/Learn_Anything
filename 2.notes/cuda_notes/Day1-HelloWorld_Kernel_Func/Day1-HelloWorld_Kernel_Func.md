@@ -86,7 +86,8 @@ Hello from GPU!
 	>在block里区分不同的thread
 	
 	![img](../../../figure/cuda_day1/3.png)
-	>一维模型中的线程Idx计算公式为 $Idx=threadIdx.x+blockIdx.x+blockDim.x$
+	>一维模型中的线程Idx计算公式为 
+	$Idx=threadIdx.x+blockIdx.x+blockDim.x$
 
 测试代码
 ```cpp
