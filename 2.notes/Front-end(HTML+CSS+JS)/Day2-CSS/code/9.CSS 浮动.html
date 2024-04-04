@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>浮动</title>
+    <style>
+        .father{
+            /* width: 500px;
+            height: 300px; */
+            background-color: aqua;
+            border: 3px;
+            /* overflow: hidden; */
+        }
+        .father::after{
+            content: '';
+            display: block;
+            clear: both;
+        }
+        .leftson{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            float: left;
+        }
+        .rightson{
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="father">
+        <div class="leftson">左浮动</div>
+        <div class="rightson">右浮动</div>
+        <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+    </div>
+</body>
+</html>

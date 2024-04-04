@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 盒子模型</title>
+    <style>
+        .demo{
+            background-color: aqua;
+            display: inline-block;
+            /* solid是实线，还可以是dotted虚线，double双线，groove凹槽线，ridge凸槽线，inset内嵌线，outset外凸线 */
+            border: 5px solid red;
+            padding: 50px;
+            margin: 30px;
+        }
+        .border-demo{
+            background-color: yellow;
+            /* border-style: solid; */
+            border-style: solid dashed dotted double;
+            border-color: blueviolet;
+            width: 100px;
+            height: 100px;
+            /* padding: 20px;
+            margin: 20px; */
+            /* border-width: 10px; */
+            border-width: 10px 2px 30px 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="demo">hello</div>
+    <div class="border-demo">这是一边框示例</div>
+    
+</body>
+</html>
