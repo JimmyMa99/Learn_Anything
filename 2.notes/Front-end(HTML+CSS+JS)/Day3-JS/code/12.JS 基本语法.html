@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS 基本语法</title>
+</head>
+<body>
+    <script>
+        var a;
+        // 推荐使用let
+        let b = 2;
+        // 常量
+        const pi = 3.1415926;
+        console.log(a);//undefined 已经被声明，但没有赋值
+        console.log(b);
+        console.log(pi);
+        console.log('hello,body标签的内联样式')
+
+        let name = '张三';
+        console.log(name);
+        let empty = null;
+        console.log(empty);
+
+
+        let age = 18;
+        if(age >= 18){
+            console.log('成年人');
+        }else{
+            console.log('未成年人');
+        }
+
+        // let time = 10;
+        // if(time < 12){
+        //     alert('上午');
+        // }else if(time < 18){
+        //     alert('下午');
+        // }else{
+        //     alert('晚上');
+        // }
+
+        console.log('for循环');
+        for(let i = 0; i < 5; i++){
+            console.log(i);
+        }
+        let cnt=1
+        while(cnt<=8){
+            console.log(cnt);
+            cnt++;
+        }
+
+        for(var i = 0; i < 5; i++){
+            
+            if (i==2){
+                continue;
+            }
+            console.log(i);
+            if (i==3){
+                break;
+            }
+        }
+    </script>
+</body>
+</html>

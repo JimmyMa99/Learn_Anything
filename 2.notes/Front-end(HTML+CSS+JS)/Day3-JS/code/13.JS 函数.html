@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS 函数</title>
+</head>
+<body>
+    <script>
+        function sayHello(){
+            console.log('hello,函数');
+        }
+        function sayhelloreturn(){
+            return 'hello,函数';
+        }
+        function sayhelloname(name){
+            console.log('hello,'+name);
+        }
+        sayHello();
+        console.log(sayhelloreturn());
+        sayhelloname('张三');
+
+        //作用域
+        let global = 'global';
+        function test(){
+            let local = 'local';
+            console.log('全局'+global);
+            console.log('局部'+local);
+        }
+        test();
+        console.log('全局'+global);
+        // console.log('局部'+local);
+    </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>移动端 rem 适配原理</title>
+    <style>
+        html{
+            font-size: 100px;
+        }
+        .box1-px{
+            width: 300px;
+            height: 100px;
+            background-color: red;
+        }
+        .box2-rem{
+            width: 5rem;
+            height: 3rem;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1-px"></div>
+    <div class="box2-rem"></div>
+
+    <script>
+        function resize(){
+            // 获取屏幕宽度
+            var width=document.documentElement.clientWidth;
+            // 计算 1rem 的值
+            var rem=width/10;
+            // 设置 html 的 font-size
+            document.documentElement.style.fontSize=rem+'px';
+        }
+        resize();
+        window.onresize=resize;
+    </script>
+</body>
+</html>
